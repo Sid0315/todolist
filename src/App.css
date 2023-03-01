@@ -74,6 +74,12 @@ input:focus {
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
 }
 
+.todo-btn {
+  width: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
 .fa {
   margin-left: -2.5rem;
   cursor: pointer;
@@ -132,18 +138,28 @@ input:focus {
   color: rgb(214, 47, 61);
 }
 
-.fa-trash-alt {
+.fa-trash-alt,
+.fa-edit {
   cursor: pointer;
   pointer-events: auto;
   z-index: 10;
   color: rgb(251, 251, 251);
-  font-size: 1rem;
+  font-size: 1.2rem;
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
 
+.addItems .fa-edit {
+  color: rgb(47, 214, 122);
+}
+
+
 .eachItem:hover .fa-trash-alt {
   color: rgb(214, 47, 61);
+}
+
+.eachItem:hover .fa-edit {
+  color: rgb(100, 214, 47);
 }
 
 .btn {
